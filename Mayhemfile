@@ -1,5 +1,5 @@
 project: lz4_flex
-target: fuzz_roundtrip
+target: fuzz_decomp_corrupt_block
 
 cmds:
-  - cmd: /fuzz_roundtrip
+  - cmd: /fuzz_decomp_corrupt_block
