@@ -1,0 +1,5 @@
+project: lz4_flex
+target: fuzz_roundtrip
+
+cmds:
+  - cmd: /fuzz_roundtrip
