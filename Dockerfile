@@ -22,4 +22,4 @@ RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y gcc
 
 ## Copy the binary from the build stage to an Ubuntu docker image
-COPY --from=builder /lz4_flex/fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_decomp_corrupt_block /
+COPY --from=builder /lz4_flex/fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_decomp_corrupt_block /fuzz-decomp-correct-block

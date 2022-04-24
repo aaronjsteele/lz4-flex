@@ -1,5 +1,5 @@
 project: lz4_flex
-target: fuzz_decomp_corrupt_block
+target: fuzz-decomp-correct-block
 
 cmds:
-  - cmd: /fuzz_decomp_corrupt_block
+  - cmd: /fuzz-decomp-correct-block
