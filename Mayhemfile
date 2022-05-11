@@ -1,6 +1,7 @@
-project: lz4_flex
-target: fuzz_decomp_corrupt_block
+project: lz4-flex
+target: fuzz-decomp-corrupt-block
+image: ghcr.io/aaronjsteele/lz4_flex:latest
 
 cmds:
-  - cmd: /fuzz_decomp_corrupt_block
+  - cmd: /fuzz-decomp-corrupt-block
     max_length: 100000

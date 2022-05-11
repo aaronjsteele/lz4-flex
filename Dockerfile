@@ -17,9 +17,5 @@ RUN cargo +nightly fuzz build fuzz_roundtrip && \
 # Package Stage -- we package for a plain Ubuntu machine
 FROM --platform=linux/amd64 ubuntu:20.04
 
-## Install build dependencies.
-RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y gcc
-
 ## Copy the binary from the build stage to an Ubuntu docker image
-COPY --from=builder /lz4_flex/fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_decomp_corrupt_block /
+COPY --from=builder /lz4_flex/fuzz/target/x86_64-unknown-linux-gnu/release/fuzz_decomp_corrupt_block /fuzz-decomp-corrupt-block
