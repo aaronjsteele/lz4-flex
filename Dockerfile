@@ -9,9 +9,7 @@ RUN cargo install cargo-fuzz
 
 # BUILD INSTRUCTIONS
 WORKDIR /lz4_flex/fuzz
-RUN cargo +nightly fuzz build fuzz_roundtrip && \
-    cargo +nightly fuzz build fuzz_roundtrip_frame && \
-    cargo +nightly fuzz build fuzz_decomp_corrupt_block
+RUN cargo +nightly fuzz build fuzz_decomp_corrupt_block
 # Output binaries are placed in /lz4-flex/fuzz/target/x86_64-unknown-linux-gnu/release
 
 # Package Stage -- we package for a plain Ubuntu machine

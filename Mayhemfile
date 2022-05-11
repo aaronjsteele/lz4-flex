@@ -1,6 +1,6 @@
 project: lz4-flex
 target: fuzz-decomp-corrupt-block
-image: ghcr.io/aaronjsteele/lz4_flex:latest
+image: ghcr.io/aaronjsteele/lz4-flex:latest
 
 cmds:
   - cmd: /fuzz-decomp-corrupt-block
