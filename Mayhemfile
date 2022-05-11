@@ -3,3 +3,4 @@ target: fuzz_decomp_corrupt_block
 
 cmds:
   - cmd: /fuzz_decomp_corrupt_block
+    max_length: 100000
