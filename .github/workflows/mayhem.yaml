@@ -8,7 +8,7 @@ env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
   MAYHEMFILE: Mayhemfile
-  PROJECTNAME: lz4-flex-test # This is necessary due to the underscore in the default GitHub name
+  PROJECTNAME: lz4-flex # This is necessary due to the underscore in the default GitHub name
 
 jobs:
   build:
